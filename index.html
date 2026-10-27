@@ -39,7 +39,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16p
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 120px}
 .wrap{max-width:1040px;margin:0 auto}
 h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
-header{margin-top:16px;padding:32px clamp(18px,4vw,44px);display:grid;gap:14px;border-radius:20px;overflow:hidden;position:relative;background:linear-gradient(100deg,rgba(8,8,10,.94) 0%,rgba(8,8,10,.78) 45%,rgba(8,8,10,.35) 100%),url("https://images.unsplash.com/photo-1608506375591-b90e1f955e4b?w=1600&q=70&auto=format") center/cover;border:1px solid var(--line)}
+header{margin-top:16px;padding:32px clamp(18px,4vw,44px);display:grid;gap:14px;border-radius:20px;overflow:hidden;position:relative;background:linear-gradient(100deg,rgba(8,8,10,.94) 0%,rgba(8,8,10,.78) 45%,rgba(8,8,10,.35) 100%),url("https://images.unsplash.com/photo-1762933855598-273a51b47649?w=1600&q=70&auto=format") center/cover;border:1px solid var(--line)}
 header .lead{color:#d6d6dc}
 header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--accent)}
 .cta{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:12px;justify-self:start}
@@ -182,9 +182,9 @@ const WHATSAPP = "5528999214001"; // DDI 55 + DDD + número, só dígitos
 const SERVICOS = [
   // foto: caminho da imagem (ex.: "fotos/lavagem.jpg"). Vazio = ícone.
   // apartir:true = preço mínimo, confirmado na avaliação.
-  {cat:"Lavagem", id:"ls-passeio", foto:"https://images.unsplash.com/photo-1633014041037-f5446fb4ce99", nome:"Lavagem simples · Passeio", preco:80, icone:"car", desc:"Lavagem externa com shampoo, rodas e pneus, aspiração e secagem. Carros hatch e sedã."},
-  {cat:"Lavagem", id:"ls-suv", foto:"https://images.unsplash.com/photo-1694649686884-0d62d0dc47d1", nome:"Lavagem simples · SUV", preco:90, icone:"car", desc:"A mesma lavagem simples para SUVs."},
-  {cat:"Lavagem", id:"ls-caminhonete", foto:"https://images.unsplash.com/photo-1551830820-330a71b99659", nome:"Lavagem simples · Caminhonete", preco:100, icone:"car", desc:"A mesma lavagem simples para caminhonetes."},
+  {cat:"Lavagem", id:"ls-passeio", foto:"https://images.unsplash.com/photo-1619510828427-e2ad58a6d7e8", nome:"Lavagem simples · Passeio", preco:80, icone:"car", desc:"Lavagem externa com shampoo, rodas e pneus, aspiração e secagem. Carros hatch e sedã."},
+  {cat:"Lavagem", id:"ls-suv", foto:"https://images.unsplash.com/photo-1642047826426-a9d091ddca6e", nome:"Lavagem simples · SUV", preco:90, icone:"car", desc:"A mesma lavagem simples para SUVs."},
+  {cat:"Lavagem", id:"ls-caminhonete", foto:"https://images.unsplash.com/photo-1759213281196-6c5e463b3021", nome:"Lavagem simples · Caminhonete", preco:100, icone:"car", desc:"A mesma lavagem simples para caminhonetes."},
   {cat:"Lavagem", id:"cera", foto:"https://images.unsplash.com/photo-1549664524-117ce7a8083b", nome:"Cera de carnaúba", preco:30, icone:"spark", desc:"Aplicação de cera de carnaúba na pintura. Brilho e proteção."},
   {cat:"Lavagem", id:"painel", foto:"https://images.unsplash.com/photo-1771491237218-cbd4a707497e", nome:"Proteção de painel e plásticos", preco:30, icone:"spark", desc:"Aplicação de protetor e restaurador no painel e nos plásticos internos."},
 
@@ -197,8 +197,8 @@ const SERVICOS = [
 
   {cat:"Motor, chassi e pintura", id:"motor", foto:"https://images.unsplash.com/photo-1676743603171-46338ba7cafc", nome:"Lavagem de motor", preco:80, icone:"gear", desc:"Desengraxe do cofre do motor com proteção das partes elétricas."},
   {cat:"Motor, chassi e pintura", id:"chassi", foto:"https://images.unsplash.com/photo-1769218402167-b0ef15eaf7cc", nome:"Lavagem de chassi", preco:140, icone:"gear", desc:"Lavagem por baixo do carro, tirando barro e sujeira acumulada."},
-  {cat:"Motor, chassi e pintura", id:"descontaminacao", foto:"https://images.unsplash.com/photo-1652898072202-5084dc85b850", nome:"Descontaminação de pintura", preco:150, icone:"drop", desc:"Remove resíduos grudados na pintura que a lavagem comum não tira."},
-  {cat:"Motor, chassi e pintura", id:"plasticos-ext", foto:"https://images.unsplash.com/photo-1760197288389-11491ba164d3", nome:"Restauração de plásticos externos", preco:120, icone:"spark", desc:"Devolve a cor dos para-choques, frisos e plásticos desbotados."},
+  {cat:"Motor, chassi e pintura", id:"descontaminacao", foto:"https://images.unsplash.com/photo-1704796141009-5ed5cc8ca5f3", nome:"Descontaminação de pintura", preco:150, icone:"drop", desc:"Remove resíduos grudados na pintura que a lavagem comum não tira."},
+  {cat:"Motor, chassi e pintura", id:"plasticos-ext", foto:"https://images.unsplash.com/photo-1568616389075-7ec27e747c9a", nome:"Restauração de plásticos externos", preco:120, icone:"spark", desc:"Devolve a cor dos para-choques, frisos e plásticos desbotados."},
 
   {cat:"Polimento e vidros", id:"farol1", foto:"https://images.unsplash.com/photo-1763313299304-606adcbcc965", nome:"Polimento de farol · 1 lente", preco:100, icone:"spark", desc:"Tira o amarelado e devolve a transparência do farol."},
   {cat:"Polimento e vidros", id:"farol2", foto:"https://images.unsplash.com/photo-1763313299386-32feff20e9d9", nome:"Polimento de farol · 2 lentes", preco:200, icone:"spark", desc:"O mesmo polimento nos dois faróis (R$ 100 por lente)."},
@@ -206,8 +206,8 @@ const SERVICOS = [
   {cat:"Polimento e vidros", id:"pol-detalhado", foto:"https://images.unsplash.com/photo-1772309500420-0afbabfbea85", nome:"Polimento detalhado de pintura", preco:600, apartir:true, icone:"spark", desc:"Polimento em etapas para o melhor acabamento possível. Valor final depende do estado da pintura."},
   {cat:"Polimento e vidros", id:"vidros", foto:"https://images.unsplash.com/photo-1555614878-149f86a9e4c7", nome:"Cristalização de vidros", preco:120, icone:"drop", desc:"Repelente de água no para-brisa e vidros. Melhora a visão na chuva."},
 
-  {cat:"Moto", id:"moto", foto:"https://images.unsplash.com/photo-1570716767971-97931a502269", nome:"Lavagem simples de moto", preco:50, icone:"drop", desc:"Lavagem completa da moto com secagem."},
-  {cat:"Moto", id:"tanque", foto:"https://images.unsplash.com/photo-1776344534811-e4ae3931158d", nome:"Polimento de tanque", preco:70, icone:"spark", desc:"Polimento do tanque para tirar riscos e devolver o brilho."},
+  {cat:"Moto", id:"moto", foto:"https://images.unsplash.com/photo-1600430760356-a0cecd2ea2c4", nome:"Lavagem simples de moto", preco:50, icone:"drop", desc:"Lavagem completa da moto com secagem."},
+  {cat:"Moto", id:"tanque", foto:"https://images.unsplash.com/photo-1694612976980-7d2384636cd1", nome:"Polimento de tanque", preco:70, icone:"spark", desc:"Polimento do tanque para tirar riscos e devolver o brilho."},
   {cat:"Moto", id:"vitrificacao", foto:"https://images.unsplash.com/photo-1763244737839-220b4cd0259e", nome:"Vitrificação", preco:250, icone:"spark", desc:"Camada de proteção de longa duração com brilho intenso."},
   {cat:"Moto", id:"descarga", foto:"https://images.unsplash.com/photo-1785100304380-6284a9e4de2d", nome:"Pintura de descarga", preco:70, icone:"gear", desc:"Pintura do escapamento com tinta resistente a calor."},
   {cat:"Moto", id:"vip-moto", foto:"https://images.unsplash.com/photo-1766820758907-3ce28e4e9625", nome:"Pacote VIP", preco:350, icone:"spark", desc:"Pacote completo de cuidados para a moto."}
