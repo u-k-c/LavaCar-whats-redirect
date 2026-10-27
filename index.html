@@ -77,7 +77,9 @@ h1 span{color:var(--accent)}
 .photo .tag{position:absolute;left:10px;top:10px;background:rgba(0,0,0,.45);color:#fff;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:6px}
 .body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
 .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
-.card h3{font-size:1.2rem;font-weight:600}
+.card h3{font-size:1.15rem;font-weight:600;line-height:1.25}
+.card .row{flex-direction:column;align-items:flex-start;gap:4px}
+.card .price{color:var(--accent);font-size:1.15rem;font-family:var(--display)}
 .price{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
 .desc{color:var(--muted);font-size:15px;margin:0;flex:1}
 .time{font-size:13px;color:var(--muted)}
@@ -199,7 +201,7 @@ const SERVICOS = [
   {cat:"Motor, chassi e pintura", id:"plasticos-ext", foto:"https://images.unsplash.com/photo-1760197288389-11491ba164d3", nome:"Restauração de plásticos externos", preco:120, icone:"spark", desc:"Devolve a cor dos para-choques, frisos e plásticos desbotados."},
 
   {cat:"Polimento e vidros", id:"farol1", foto:"https://images.unsplash.com/photo-1763313299304-606adcbcc965", nome:"Polimento de farol · 1 lente", preco:100, icone:"spark", desc:"Tira o amarelado e devolve a transparência do farol."},
-  {cat:"Polimento e vidros", id:"farol2", foto:"https://images.unsplash.com/photo-1515569067071-ec3b51335dd0", nome:"Polimento de farol · 2 lentes", preco:200, icone:"spark", desc:"O mesmo polimento nos dois faróis (R$ 100 por lente)."},
+  {cat:"Polimento e vidros", id:"farol2", foto:"https://images.unsplash.com/photo-1763313299386-32feff20e9d9", nome:"Polimento de farol · 2 lentes", preco:200, icone:"spark", desc:"O mesmo polimento nos dois faróis (R$ 100 por lente)."},
   {cat:"Polimento e vidros", id:"pol-tecnico", foto:"https://images.unsplash.com/photo-1632823469901-5d2cfff5ba50", nome:"Polimento técnico de pintura", preco:300, apartir:true, icone:"spark", desc:"Remove riscos leves e manchas e devolve o brilho. Valor final depende do estado da pintura."},
   {cat:"Polimento e vidros", id:"pol-detalhado", foto:"https://images.unsplash.com/photo-1772309500420-0afbabfbea85", nome:"Polimento detalhado de pintura", preco:600, apartir:true, icone:"spark", desc:"Polimento em etapas para o melhor acabamento possível. Valor final depende do estado da pintura."},
   {cat:"Polimento e vidros", id:"vidros", foto:"https://images.unsplash.com/photo-1555614878-149f86a9e4c7", nome:"Cristalização de vidros", preco:120, icone:"drop", desc:"Repelente de água no para-brisa e vidros. Melhora a visão na chuva."},
